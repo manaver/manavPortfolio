@@ -28,14 +28,15 @@ const Home = ({ name, title }) => {
   return (
     <section id="home" className="dark">
       <div id="homeContentText">
-        <img className="" src={image} alt="" />
         <div>
           <h1>{name}</h1>
           <h2>{title}</h2>
-          <div className="flexRow bodyBtn">
-            <h2 className="moreContentText">More</h2>
-            <img src={arrowSvg} className="white" style={{ height: "1.5rem", width: "1.5rem" }} alt={imageAltText} />
-          </div>
+          <a href="#about">
+            <div className="flexRow bodyBtn">
+              <h2 className="moreContentText">More</h2>
+              <img src={arrowSvg} className="white" style={{ height: "1.5rem", width: "1.5rem" }} alt={imageAltText} />
+            </div>
+          </a>
         </div>
       </div>
     </section>
