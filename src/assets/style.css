@@ -1,0 +1,234 @@
+:root{
+  /* --light-component: rgba(255, 255, 255, 0.815); */
+  /* --light-component: #55C1B3; It will be good with #1E1E1E background color */
+  /* --light-component: #FFD166; It will be good with #1E1E1E background color */
+  /* --light-component: #9B59B6; It will be good with #1E1E1E background color */
+  --component-color: #1E1E1E; /* dark color with #171717 background */
+  --bg-color: #171717;
+  --text-color: #F7F7F7;
+  --purple-color: rgb(99, 3, 189);
+  --active-color: rgb(219, 219, 219);
+
+  --white: rgba(252, 252, 252, 0.815);
+  /* --bg-color: rgb(243, 239, 239); */
+  --primary: #3572f5;
+  --light-grey: rgb(117, 117, 117);
+  /* --text-color: rgb(117, 117, 117); */
+  /* --component-shadow: rgb(212, 209, 209); */
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+html {
+    line-height: 1.5; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */ /* 3 */
+    tab-size: 4; /* 3 */
+  }
+.App {
+    margin: 0; /* 1 */
+    line-height: inherit; /* 2 */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: var(--bg-color);
+    min-height: 100vh;
+    color: var(--text-color);
+  }
+  .section{
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--component-color);
+    margin: 20px 0px;
+    min-width: 100%;
+  }
+#Home{
+  width: 100%;
+}
+#mainLogoBg{
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 5px;
+  background: white;
+  border: 3px solid var(--purple-color);
+}
+#sideHome{
+  position: sticky;
+  top: 10px;
+  height: fit-content;
+}
+@media screen and (max-width: 575px) {
+  #sideHome{
+    position: relative;
+    top: 10px;
+    height: fit-content;
+  }
+}
+
+
+.logo{
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+.miniSection{
+  padding: 5px;
+  margin: 15px 0px;
+}
+.resumeBtn:hover{
+  transition: 0.2s all ease-in-out;
+  background: #e5e5e9;
+}
+.inlineItem{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+#mainHome{
+  width: 100%;
+}
+.details{
+  width: 100%;
+  padding: 15px;
+}
+
+.stackBtn{
+  font-size: small;
+  padding: 6px 16px;
+  margin: 5px;
+  font-weight: bold;
+  border-radius: 100px;
+  background: var(--primary);
+  color: var(--white);
+  text-decoration: none;
+}
+/* Experience Content */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.timeline-item {
+  position: relative;
+  padding: 10px 0px;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--light-grey);
+}
+
+.timeline-content {
+  margin-left: 30px;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+
+}
+
+.timeline-content p {
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+/* Connect the dots */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 4px;
+  width: 2px;
+  height: calc(100% - 20px);
+  background-color: var(--light-grey);
+}
+#Projects{
+  background: rgba(31, 31, 31, 0.486);
+  border-radius: 20px;
+}
+/* GH Repos */
+#repos li{
+ list-style: none;
+}
+#repos li a{
+ text-decoration: none;
+ color: var(--text-color);
+}
+.miniIcon{
+  width: 1rem;
+  margin-right: 5px;
+}
+.largeIcon{
+  width: 2rem;
+  margin-right: 10px;
+}
+.LabelIcon{
+  display: flex;
+  justify-content: center;
+}
+
+#ThemeBox{
+  position: absolute;
+  z-index: 100;
+  margin-top: 10px;
+  min-width: 200px;
+  background: var(  --bg-color);
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 20px 10px;
+}
+
+#ThemeBox .dropdown-item{
+  padding: 10px;
+  margin: 0px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+#ThemeBox .dropdown-item:hover{
+  background: var(--purple-color);
+  color: white;
+}
+#ThemeBox .dropdown-item:active{
+  background: var(--active-color);
+  color: black;
+}
+
+#ThemeSelect .show{
+  display: flex;
+}
+#ThemeSelect .hidden{
+  display: none;
+}
+#ThemeBtn{
+  background: var(--white);
+}
+#ThemeBox .active{
+  background: var(--purple-color);
+  color: white;
+}
