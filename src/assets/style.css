@@ -3,11 +3,12 @@
   /* --light-component: #55C1B3; It will be good with #1E1E1E background color */
   /* --light-component: #FFD166; It will be good with #1E1E1E background color */
   /* --light-component: #9B59B6; It will be good with #1E1E1E background color */
-  --component-color: #1E1E1E; /* dark color with #171717 background */
-  --bg-color: #171717;
-  --text-color: #F7F7F7;
-  --purple-color: rgb(99, 3, 189);
+  --component-color: rgb(243, 239, 239); /* dark color with #171717 background */
+  --bg-color: rgba(255, 255, 255, 0.815);
+  --text-color: rgb(117, 117, 117);
+  --highlighted-color: rgb(99, 3, 189);
   --active-color: rgb(219, 219, 219);
+  --secondary-bg: #F7F7F7;
 
   --white: rgba(252, 252, 252, 0.815);
   /* --bg-color: rgb(243, 239, 239); */
@@ -21,6 +22,7 @@
 ::before,
 ::after {
   box-sizing: border-box; /* 1 */
+  font-family: 'Baloo 2', cursive;
 
 }
 
@@ -67,7 +69,7 @@ html {
   border-radius: 100%;
   padding: 5px;
   background: white;
-  border: 3px solid var(--purple-color);
+  border: 3px solid var(--highlighted-color);
 }
 #sideHome{
   position: sticky;
@@ -168,7 +170,7 @@ html {
   background-color: var(--light-grey);
 }
 #Projects{
-  background: rgba(31, 31, 31, 0.486);
+  background: var(--component-color)  ;
   border-radius: 20px;
 }
 /* GH Repos */
@@ -197,7 +199,7 @@ html {
   z-index: 100;
   margin-top: 10px;
   min-width: 200px;
-  background: var(  --bg-color);
+  background: var(--bg-color);
   justify-content: center;
   flex-direction: column;
   border-radius: 20px;
@@ -206,12 +208,12 @@ html {
 
 #ThemeBox .dropdown-item{
   padding: 10px;
-  margin: 0px;
+  margin: 5px 0px;
   font-weight: 500;
   border-radius: 10px;
 }
 #ThemeBox .dropdown-item:hover{
-  background: var(--purple-color);
+  background: var(--highlighted-color);
   color: white;
 }
 #ThemeBox .dropdown-item:active{
@@ -229,6 +231,18 @@ html {
   background: var(--white);
 }
 #ThemeBox .active{
-  background: var(--purple-color);
-  color: white;
+  background: var(--active-color);
+  color: black;
+}
+.head-label{
+  min-width: 150px;
+  text-align: start;
+}
+.info a{
+  text-decoration: none;
+  border-bottom: 2px solid var(--text-color);
+  color: var(--text-color);
+  padding-bottom: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
 }

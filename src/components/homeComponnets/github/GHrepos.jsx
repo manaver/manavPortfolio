@@ -20,7 +20,7 @@ function GHrepos() {
   }, []);
 
   return (
-    <div className="p-3 pt-2 mb-5" id="Projects">
+    <div className="p-3 pt-2 mb-5 " id="Projects">
       <div className="fs-3 fw-semibold m-4">My Projects</div>
       <RepoItems repositories={repositories} />
     </div>
