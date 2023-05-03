@@ -1,11 +1,8 @@
 :root{
-  /* --light-component: rgba(255, 255, 255, 0.815); */
-  /* --light-component: #55C1B3; It will be good with #1E1E1E background color */
-  /* --light-component: #FFD166; It will be good with #1E1E1E background color */
-  /* --light-component: #9B59B6; It will be good with #1E1E1E background color */
-  --component-color: rgb(243, 239, 239); /* dark color with #171717 background */
+ --component-color: rgb(243, 239, 239); /* dark color with #171717 background */
   --bg-color: rgba(255, 255, 255, 0.815);
   --text-color: rgb(117, 117, 117);
+  --highlighted-text: rgb(255, 255, 255);
   --highlighted-color: rgb(99, 3, 189);
   --active-color: rgb(219, 219, 219);
   --secondary-bg: #F7F7F7;
@@ -118,8 +115,8 @@ html {
   margin: 5px;
   font-weight: bold;
   border-radius: 100px;
-  background: var(--primary);
-  color: var(--white);
+  background: var(--highlighted-color);
+  color: var(--highlighted-text);
   text-decoration: none;
 }
 /* Experience Content */
@@ -146,6 +143,7 @@ html {
 
 .timeline-content {
   margin-left: 30px;
+  min-width: 100%;
 }
 
 .timeline-content h3 {
@@ -245,4 +243,5 @@ html {
   padding-bottom: 5px;
   display: inline-block;
   margin-bottom: 10px;
+  padding-bottom: 0px;
 }

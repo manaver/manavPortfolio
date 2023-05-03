@@ -1,5 +1,5 @@
-import Star from "../../../img/star.svg";
-import Fork from "../../../img/fork.svg";
+import Star from "../../../img/svg/star.svg";
+import Fork from "../../../img/svg/fork.svg";
 
 function RepoItems(props) {
   return (

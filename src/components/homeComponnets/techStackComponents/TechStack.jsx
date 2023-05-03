@@ -1,18 +1,13 @@
 import TechStackItems from "./TechStackItems";
 
-function TechStack() {
+function TechStack(props) {
   return (
     <div className="section">
       <div className="heading fw-semibold fs-3">Tech Stacks</div>
       <div className="items d-flex flex-row flex-wrap justify-content-center p-3">
-        <TechStackItems />
-        <TechStackItems />
-        <TechStackItems />
-        <TechStackItems />
-        <TechStackItems />
-        <TechStackItems />
-        <TechStackItems />
-        <TechStackItems />
+        {props.data.map((item, index) => (
+          <TechStackItems name={item} />
+        ))}
       </div>
     </div>
   );

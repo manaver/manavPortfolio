@@ -1,7 +1,7 @@
-function TechStackItems() {
+function TechStackItems(props) {
   return (
     <a href="#" className="stackBtn">
-      Item name
+      {props.name}
     </a>
   );
 }

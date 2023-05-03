@@ -28,10 +28,10 @@ function InfoItem(props) {
   }
 
   return (
-    <div className="inlineItem">
+    <div className="inlineItem d-flex flex-row flex-wrap">
       <div className="head d-flex flex-row d-flex align-items-center">
         <div className="logo">
-          <img src="" alt="Logo" />
+          <img className="miniIcon" src={props.svg} alt="Stars" />
         </div>
         <h4 className="fw-bold fs-6 ms-3 head-label">{props.header}</h4>
       </div>
